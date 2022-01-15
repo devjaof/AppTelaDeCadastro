@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/cadastro_de_pessoas"
+        android:textColor="#01385C"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Nome Completo"
+        android:inputType="textPersonName"
+        android:maxLength="45"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="number"
+        android:maxLength="2"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Email@email.com.br"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Sexo:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonMasc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feminino"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonInt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intersexo"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prefiro não dizer"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Cadastrar"/>
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
